@@ -1,0 +1,342 @@
+.semonto-health-monitor {
+  max-width: calc(100% - 10px);
+}
+
+@media only screen and (min-width: 782px) {
+  .semonto-health-monitor {
+    max-width: calc(100% - 20px);
+  }
+}
+
+.semonto-health-monitor__body {
+  background-color: #fff;
+  border-left: 1px solid #c3c4c7;
+  border-right: 1px solid #c3c4c7;
+  border-bottom: 1px solid #c3c4c7;
+  padding: 1em;
+}
+
+.semonto-health-monitor__title {
+  font-size: 1.5em;
+}
+
+/*
+ * Tabs
+ */
+.semonto-health-monitor__tabs {
+  display: flex;
+  border-bottom: 1px solid #c3c4c7;
+}
+
+.semonto-health-monitor__tab {
+  background-color: #dddddd;
+  padding: .5rem 1rem 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: inherit;
+  border-top: 1px solid #c3c4c7;
+  border-right: 1px solid #c3c4c7;
+  border-left: 1px solid #c3c4c7;
+}
+
+.semonto-health-monitor__tab:first-child {
+  border-right: none;
+}
+
+.semonto-health-monitor__tab:last-child {
+  border-left: none;
+}
+
+.semonto-health-monitor__tab:hover {
+  color: inherit;
+}
+
+.semonto-health-monitor__tab.active {
+  box-shadow: 0 1px #fff;
+  background-color: #fff;
+}
+
+.semonto-health-monitor__tab:not(.active):hover {
+  color: inherit;
+  background-color: #d3d3d3 !important;
+}
+
+/*
+ * Hero section
+ */
+.semonto-health-monitor__hero-banner {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5em;
+}
+
+.semonto-health-monitor__hero-banner p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.semonto-health-monitor__hero-icon-wrapper {
+  margin-right: 1em;
+}
+
+.semonto-health-monitor__hero-icon {
+  width: 3em;
+  height: 3em;
+  border-radius: 0.25em;
+}
+
+.semonto-health-monitor__hero-content {
+  margin-bottom: 1.5em;
+}
+
+.semonto-health-monitor__hero-image {
+  box-shadow: rgba(0, 0, 0, 0.15) 0 0.5em 1em 0;
+  max-width: 100%;
+}
+
+.semonto-health-monitor__hero-content-list {
+  list-style-type: disc;
+  padding-left: 1.5em;
+  margin-bottom: 1em;
+}
+
+@media screen and (min-width: 782px) {
+
+  .semonto-health-monitor__hero-content-wrapper {
+    display: flex;
+  }
+
+  .semonto-health-monitor__hero-content {
+    margin-bottom: 0;
+    display: flex;
+    margin-right: 3em;
+    max-width: 50%;
+  }
+
+  .semonto-health-monitor__hero-image-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .semonto-health-monitor__hero-image {
+    max-width: 400px;
+  }
+}
+
+/*
+ * Tests.
+ */
+.semonto-health-monitor__test-container {
+  max-width: 470px;
+}
+
+.semonto-health-monitor__test-container * {
+  box-sizing: border-box !important;
+}
+
+.semonto-health-monitor__test-container:last-child {
+  margin-bottom: 3em;
+}
+
+.semonto-health-monitor__test-divider {
+  max-width: 470px;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  margin-left: 0;
+  margin-right: auto;
+  border: .5px solid #c3c4c7;
+}
+
+.semonto-health-monitor__test-thresholds {
+  width: 100%;
+  display: flex;
+  margin-bottom: 1em;
+}
+
+.semonto-health-monitor__test-thresholds .semonto-health-monitor__test-threshold:nth-child(1) {
+  margin-right: 0.25em;
+  margin-left: 60%;
+}
+
+.semonto-health-monitor__test-thresholds .semonto-health-monitor__test-threshold:nth-child(2) {
+  margin-left: 0.25em;
+}
+
+.semonto-health-monitor__test .semonto-health-monitor__test-threshold:nth-child(2) {
+  margin-right: 0.25em;
+}
+
+.semonto-health-monitor__test .semonto-health-monitor__test-threshold:nth-child(3) {
+  margin-left: 0.25em;
+}
+
+.semonto-health-monitor__test-threshold {
+  width: 20%;
+  text-align: center;
+}
+
+.semonto-health-monitor__test {
+  display: flex;
+  margin-bottom: 0.5em;
+}
+
+@media only screen and (min-width: 782px) {
+  .semonto-health-monitor__test-thresholds .semonto-health-monitor__test-threshold:nth-child(1) {
+    margin-left: 50%;
+  }
+
+  .semonto-health-monitor__test-threshold {
+    width: 25%;
+  }
+}
+
+ /*
+  * Switches
+  */
+.semonto-health-monitor__switch-container {
+  flex-basis: 60%;
+  display: flex;
+  align-items: center;
+  padding-right: 0.5em;
+  flex-shrink: 0;
+}
+
+.semonto-health-monitor__switch-label {
+  flex-grow: 1;
+  text-align: right;
+  padding-right: 0.5em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.semonto-health-monitor__switch-label:hover {
+  cursor: pointer;
+}
+
+.semonto-health-monitor__test-switch {
+  position: relative;
+  display: inline-block;
+  margin: 0px;
+  width: 2.4em;
+  height: 1.2em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+.semonto-health-monitor__test-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.semonto-health-monitor__test-switch-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.semonto-health-monitor__test-switch-slider:before {
+  position: absolute;
+  content: "";
+  height: 0.9em;
+  width: 0.9em;
+  left: .15em;
+  bottom: .15em;
+  background-color: #fff;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.semonto-health-monitor__test-switch input:checked+.semonto-health-monitor__test-switch-slider {
+  background-color: #2271b1;
+}
+
+.semonto-health-monitor__test-switch input:focus+.semonto-health-monitor__test-switch-slider {
+  box-shadow: 0 0 1px #2271b1;
+}
+
+.semonto-health-monitor input:checked+.semonto-health-monitor__test-switch-slider:before {
+  -webkit-transform: translateX(1.2em);
+  -ms-transform: translateX(1.2em);
+  transform: translateX(1.2em);
+}
+
+.semonto-health-monitor__test-switch-slider {
+  border-radius: 1em;
+}
+
+.semonto-health-monitor__test-switch-slider:before {
+  border-radius: 0.45em;
+}
+
+@media only screen and (min-width: 782px) {
+  .semonto-health-monitor__switch-container {
+    flex-basis: 50%;
+  }
+}
+
+.semonto-health-monitor__primary-button {
+  width: 100%;
+  text-align: center;
+}
+
+/*
+ * Input styles
+ */
+.semonto-health-monitor input {
+  margin: 0px;
+}
+
+.semonto-health-monitor input.is-invalid,
+.semonto-health-monitor input.is-invalid:focus,
+.semonto-health-monitor input:invalid {
+  border: 2px solid #d63638;
+  box-shadow: 0 0 0 1px #d63638;
+}
+
+/*
+ * Errors
+ */
+.semonto-health-monitor__error-message {
+  color: #d63638;
+  margin-bottom: 0.75em;
+  text-align: right;
+}
+
+/*
+ * Info message.
+ */
+.semonto-health-monitor__not-available {
+  color: #2271b1;
+  background-color: #edf4f9;
+  border: 1px solid #2271b1;
+  border-radius: 0.25em;
+  margin-top: 1em !important;
+  padding: 1em;
+  font-size: 1em !important;
+}
+
+.semonto-health-monitor__secret-key {
+  width: 100%;
+}
+
+.semonto-health-monitor__form {
+  margin-top: 3em;
+}
+
+.semonto-health-monitor__install-message {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  border: 1px solid #0c7f29;
+  color: #0c7f29;
+  background-color: #eaf7ee;
+  padding: 1em;
+  border-radius: 0.25em;
+  font-weight: 600;
+}
